@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <!-- <audio id='audioelement' controls preload> -->
+    <audio id="audioelement" preload>
+      <!-- <source src='0.wav' type='audio/wav'> -->
+    </audio>
+    <div class="container">
+      <div id="buttons" class="container-buttons">
+        <!-- all buttons goes there -->
+      </div>
+      <div class="sidebar">
+        <fieldset id="display">
+          <!-- <legend>DISPLAY</legend> -->
+          <output id="topLeftLine" style="text-align: left">topLeftLine</output>
+          <output id="topRightLine" style="text-align: right"
+            >topRightLine</output
+          >
+          <br />
+          <output id="bottomLeftLine" style="text-align: left"
+            >bottomLeftLine</output
+          >
+          <output id="bottomRightLine" style="text-align: right"
+            >bottomRightLine</output
+          >
+        </fieldset>
+        <div class="control-buttons">
+          <button id="stopAudio" onclick="stopAud()" type="button">STOP</button>
+          <button id="playAudio" onclick="playCurrentAud()" type="button">
+            PLAY
+          </button>
+          <button id="loopButton" onclick="loopAud()" type="button">
+            LOOP
+          </button>
+        </div>
+      </div>
+      <div id="peak-meter"></div>
+    </div>
+    <!-- Scripts goes here -->
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/web-audio-peak-meter.min.js"></script>
+    <script src="scripts/aplayer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#display {
+  margin: 0 5px;
+  color: lightblue;
+  background-color: rgb(28, 34, 65);
+}
+
+.container {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 8em;
+  grid-template-rows: 1fr;
+  grid-template-areas: "buttons controls meter";
+}
+
+.container-buttons {
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  column-gap: 0.5em;
+  row-gap: 0.5em;
+}
+
+.control-buttons {
+  display: flex;
+  align-items: stretch;
+  margin: 2em 5px;
+}
+
+#stopAudio {
+  margin: 0 5px;
+  height: 40px;
+  flex-grow: 1;
+}
+
+#playAudio {
+  margin: 0 5px;
+  flex-grow: 1;
+}
+
+#peak-meter {
+  margin: 0;
+}
